@@ -17,3 +17,7 @@ jobs:
       run: make CC=gcc
     - name: make CC=clang
       run: make CC=clang
+    - name: make BUILD=release CC=gcc
+      run: make BUILD=release CC=gcc
+    - name: make BUILD=release CC=clang
+      run: make BUILD=release CC=clang

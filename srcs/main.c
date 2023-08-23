@@ -31,6 +31,7 @@ void	print_sym(int fd) {
 
 	ret_fstat = fstat(fd, &statbuf);
 	printf("%lu\n", statbuf.st_dev);
+	(void)ret_fstat;
 }
 
 int	test2(const char *pathnm, const char *pathbin, int ac) {

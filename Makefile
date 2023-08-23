@@ -20,13 +20,13 @@ DEPS	:= ${OBJS:.o=.d}
 CC	:=	clang
 
 CFLAGS.debug	:= -O0 -g3 -fsanitize=address -fsanitize=undefined -fsanitize=leak
-CFLAGS.release	:=
+CFLAGS.release	:= -O3
 CFLAGS	:= -Wall -Wextra -Werror ${CFLAGS.${BUILD}}
 
 LDLIBS	:= -lc
 
 LDFLAGS.debug	:= -g3 -fsanitize=address -fsanitize=undefined -fsanitize=leak
-LDFLAGS.release	:= 
+LDFLAGS.release	:= -O3
 LDFLAGS	:= ${LDFLAGS.${BUILD}}
 
 COMPILE	= ${CC} -MD -MP ${CFLAGS} -c $< -o $@
