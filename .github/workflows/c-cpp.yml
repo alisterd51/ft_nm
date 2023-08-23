@@ -13,11 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: make CC=gcc
-      run: make CC=gcc
-    - name: make CC=clang
-      run: make CC=clang
-    - name: make BUILD=release CC=gcc
-      run: make BUILD=release CC=gcc
-    - name: make BUILD=release CC=clang
-      run: make BUILD=release CC=clang
+    - name: make re CC=gcc
+      run: make re CC=gcc
+    - name: make re CC=clang
+      run: make re CC=clang
+    - name: make re BUILD=release CC=gcc
+      run: make re BUILD=release CC=gcc
+    - name: make re BUILD=release CC=clang
+      run: make re BUILD=release CC=clang
